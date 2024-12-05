@@ -21,6 +21,8 @@ for el in dataset_list:
     X.append(int(row[0]))
     Y.append(int(row[1]))
 
+Y = [-el for el in Y]
+
 def figure_plot(lib_num):
     if lib_num == 1:
         plt.figure(figsize=(960/100, 540/100))
